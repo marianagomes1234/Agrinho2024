@@ -1,53 +1,102 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cultivo de Alimentos Orgânicos</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #555;
+        }
+        nav a {
+            color: #fff;
+            padding: 1rem;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background: #333;
+        }
+        .container {
+            padding: 2rem;
+        }
+        .section-title {
+            margin-top: 2rem;
+            text-align: center;
+            color: #333;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>Cultivo de Alimentos Orgânicos</h1>
     </header>
-
-    <main>
-        <section id="introducao">
-            <h2>O que são alimentos orgânicos?</h2>
-            <p>Alimentos orgânicos são aqueles cultivados sem o uso de pesticidas sintéticos, fertilizantes químicos, hormônios de crescimento ou organismos geneticamente modificados (OGMs). Esse método de cultivo promove práticas sustentáveis que preservam a biodiversidade e a saúde do solo.</p>
+    <nav>
+        <a href="#intro">Introdução</a>
+        <a href="#benefits">Benefícios</a>
+        <a href="#methods">Métodos de Cultivo</a>
+        <a href="#gallery">Galeria</a>
+        <a href="#contact">Contato</a>
+    </nav>
+    <div class="container">
+        <section id="intro">
+            <h2 class="section-title">Introdução</h2>
+            <p>O cultivo de alimentos orgânicos é uma prática sustentável que promove a saúde do solo, dos alimentos e dos consumidores. Esta página explora os benefícios e os métodos usados na agricultura orgânica.</p>
         </section>
-
-        <section id="beneficios">
-            <h2>Benefícios do cultivo orgânico</h2>
+        <section id="benefits">
+            <h2 class="section-title">Benefícios</h2>
             <ul>
-                <li>Melhor qualidade nutricional dos alimentos;</li>
-                <li>Menor impacto ambiental;</li>
-                <li>Promoção da biodiversidade;</li>
-                <li>Respeito ao bem-estar animal;</li>
-                <li>Preservação da saúde do solo e da água.</li>
+                <li>Alimentos mais saudáveis, livres de agrotóxicos e químicos artificiais.</li>
+                <li>Práticas agrícolas sustentáveis que respeitam o meio ambiente.</li>
+                <li>Preservação da biodiversidade e melhoria da saúde do solo.</li>
+                <li>Redução da poluição do ar, solo e água.</li>
             </ul>
         </section>
-
-        <section id="metodos">
-            <h2>Métodos de cultivo orgânico</h2>
-            <p>Existem várias técnicas utilizadas no cultivo orgânico, incluindo:</p>
+        <section id="methods">
+            <h2 class="section-title">Métodos de Cultivo</h2>
+            <p>Os métodos de cultivo orgânico incluem:</p>
             <ul>
-                <li>Compostagem;</li>
-                <li>Rotação de culturas;</li>
-                <li>Controle biológico de pragas;</li>
-                <li>Uso de adubos naturais, como esterco e compostos orgânicos;</li>
-                <li>Manejo integrado de nutrientes.</li>
+                <li>Rotação de culturas para prevenir doenças e pragas.</li>
+                <li>Uso de adubos orgânicos, como compostagem e estrume.</li>
+                <li>Controle biológico de pragas através de predadores naturais.</li>
+                <li>Manutenção da saúde do solo com técnicas como a adubação verde.</li>
             </ul>
         </section>
-
-        <section id="exemplos">
-            <h2>Exemplos de alimentos orgânicos</h2>
-            <p>Frutas, vegetais, grãos, carne, laticínios e outros produtos podem ser cultivados organicamente. Certificações garantem que esses alimentos atendem aos padrões de produção orgânica estabelecidos.</p>
+        <section id="gallery">
+            <h2 class="section-title">Galeria</h2>
+            <div class="gallery">
+                <img src="organic1.jpg" alt="Cultivo orgânico">
+                <img src="organic2.jpg" alt="Horta orgânica">
+                <img src="organic3.jpg" alt="Produtos orgânicos">
+            </div>
         </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2024 Cultivo de Alimentos Orgânicos. Todos os direitos reservados.</p>
-    </footer>
+        <section id="contact">
+            <h2 class="section-title">Contato</h2>
+            <p>Para mais informações, entre em contato conosco pelo e-mail: info@organicfarm.com</p>
+        </section>
+    </div>
 </body>
 </html>
