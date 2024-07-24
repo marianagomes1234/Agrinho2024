@@ -1,49 +1,91 @@
 /* Estilos gerais */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
 header {
-    background-color: #4CAF50;
+    background: #2c3e50;
     color: #fff;
+    padding: 1.5rem 0;
     text-align: center;
-    padding: 1em 0;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 2em;
+nav {
+    display: flex;
+    justify-content: center;
+    background: #34495e;
 }
 
-main {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 0 20px;
+nav a {
+    color: #fff;
+    padding: 1rem;
+    text-decoration: none;
+    transition: background 0.3s;
 }
 
-section {
-    margin-bottom: 30px;
+nav a:hover {
+    background: #2c3e50;
 }
 
-h2 {
-    color: #4CAF50;
+.container {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title {
+    margin-top: 2rem;
+    text-align: center;
+    color: #2c3e50;
+    border-bottom: 2px solid #2c3e50;
+    padding-bottom: 0.5rem;
 }
 
 ul {
-    list-style-type: disc;
-    margin-left: 20px;
+    list-style-type: square;
+    margin-left: 2rem;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border: 2px solid #2c3e50;
+    border-radius: 5px;
 }
 
 footer {
-    text-align: center;
-    background-color: #333;
+    background: #2c3e50;
     color: #fff;
-    padding: 10px 0;
+    text-align: center;
+    padding: 1rem 0;
     position: fixed;
-    bottom: 0;
     width: 100%;
+    bottom: 0;
+}
+
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        text-align: center;
+        padding: 0.5rem;
+        border-bottom: 1px solid #2c3e50;
+    }
+
+    nav a:last-child {
+        border-bottom: none;
+    }
 }
